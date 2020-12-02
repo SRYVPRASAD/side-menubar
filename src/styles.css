@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    background:whitesmoke;
+    font-size : 16px;
+    --text-primary:#dad8e2aa;
+    --text-secondary: #f3f2f7ef;
+    --bg-primary: #29224e;
+    --bg-secondary: #171329aa;
+
+}
+
+
+
+html,body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+    color: red;
+}
+
+
+

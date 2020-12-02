@@ -1,0 +1,27 @@
+<div class ="header"> 
+    <button (click)="toOpenMenu()">	&equiv;</button>
+    <img src= "assets/img/valueHeadLogo.png" alt="ValyouX">
+</div>
+<div class= "page-container">  
+<div class= "sidebar" *ngIf="isDisplayed" >
+    <div class= "logo"  ><img src= "assets/img/valueHeadLogo.png" alt="ValyouX"> </div>
+        <div class= "list-items">
+            <a routerLink="/home" class ="list-item">
+                <i class= "material-icons"> bookmark_border</i><span  class= "link-text">Home</span></a>
+            <a routerLink="/about" class="list-item">
+                <i class = "material-icons">face</i><span class= "link-text">About</span></a>
+            <a routerLink="/contact" class ="list-item">
+                <i class= "material-icons">help_outline</i><span class= "link-text">Contact</span></a>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>
+
+<test (stateOfChange)="isDisplayed=$event"[parentData]='name'></test>
+<!-- 
+<button (click)="show = !show">{{show ? 'hide' : 'show'}}</button>
+    show = {{show}}
+    <br>
+    <div *ngIf="show; else elseBlock">Text to show</div>
+    <ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>
+    <p [ngStyle]="{'width.px': widthExp}">how are you????</p> -->
