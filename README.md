@@ -1,8 +1,8 @@
 # SideMenubar
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
-## Responsive menubar 
-This a responsive Menubar only css and angular toggle 
+## Responsive Menu-Bar 
+This a responsive Menu Bar using only css and angular toggle 
 ### CSS ### Hanberger menu
 ## Development server
 
